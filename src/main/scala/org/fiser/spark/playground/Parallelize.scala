@@ -11,6 +11,6 @@ object Parallelize {
     val sc = new SparkContext(conf)
     val rdd: RDD[(String, Int)] = sc.parallelize(list)
 
-    rdd.count()
+    println(s"${rdd.count()}")
   }
 }
